@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "killport": "lsof -t -i tcp:1234 | xargs kill"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlbroughton88/Portfolio.git"
+  },
+  "author": "Jacob Broughton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlbroughton88/Portfolio/issues"
+  },
+  "homepage": "https://github.com/jlbroughton88/Portfolio#readme",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "react-router-dom": "^5.0.1"
+  }
+}
