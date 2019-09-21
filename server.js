@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express();
+var path = require("path");
 
 // MUST UPDATE BUILD FOLDER WHENEVER I PUSH TO HEROKU
 // run this in the client folder....npm run build
