@@ -79,8 +79,13 @@ const Name = styled.h1`
     margin-bottom: 5%;
     color: #d4d4dc;
     font-size: 3rem;
+
     @media(max-width: 380px) {
         font-size: 2.1rem;
+    }
+
+    @media(min-width: 515px) {
+        margin-bottom: 25px
     }
 
 `
@@ -94,12 +99,18 @@ const Statement = styled.h3`
     @media(max-width: 380px) {
         font-size: 1rem;
     }
+
+    @media(min-width: 515px) {
+        margin-bottom: 25px
+    }
 `
 
 const ContactButton = styled.div`
     background-color: #feda6a;
     margin-top: 1%;
-    padding: 2%;  
+    padding: 20px;
+    max-width: 132px
+    max-height: 59px;
 
 `
 
@@ -109,6 +120,7 @@ const WindowsDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     align-self: center;
 
     @media(max-width: 614px) {
@@ -119,9 +131,6 @@ const WindowsDiv = styled.div`
 
 const Window = styled.div`
     margin-bottom: 5%;
-    padding: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -130,6 +139,12 @@ const Window = styled.div`
     color:#0f2027;
     background-color: #393f4d;
     max-width: 712px;
+
+        max-width: 562px;
+        max-height: 179px;
+        padding: 30px;
+
+
     
 `
 
