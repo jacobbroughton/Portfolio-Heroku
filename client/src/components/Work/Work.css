@@ -1,0 +1,33 @@
+#newAgeOilsDiv{
+    background-image: url("../images/myWork/newAgeOils.png");
+    background-size: cover;
+    background-position: center; 
+    filter: brightness(70%);
+}
+
+#loneSoldierDiv{
+    background-image: url("../images/myWork/loneSoldier.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+
+}
+
+#bikeGuessingDiv{
+    background-image: url("../images/myWork/brandGuessingGame.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+}
+
+#calculatorDiv{
+    background-image: url("../images/myWork/calculator.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+}
+
+.opaqueHead{
+    font-size: 1.8rem;
+    margin: 0;
+}

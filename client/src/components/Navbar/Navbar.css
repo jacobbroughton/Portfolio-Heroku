@@ -1,0 +1,124 @@
+.nameLink{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.navLink{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+@media(max-width: 760px) {
+    .nameLink{ font-size: 1.1rem }
+    .navLink{ font-size: 1.1rem }
+}
+
+@media(max-width: 582px) {
+    .nameLink{ font-size: 1.0rem }
+    .navLink{ font-size: 1.0rem }
+}
+
+@media(max-width: 380px) {
+    .navLink{ margin: 3% }
+}
+
+@media(min-width: 501px) {
+    .hamburgerMenu{ display: none; };
+    .bm-burger-button{ display: none; }
+    .linksMenu{ display: inline-block; } 
+}
+
+@media(max-width: 500px) {
+    .hamburgerMenu{ display: inline-block; }
+    .navLink{ display: none; } 
+    
+}
+
+/* BURGER MENU */
+
+/* Position and sizing of burger button */
+
+.hamburgerMenu{
+  position: fixed;
+
+}
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    min-height: 30px;
+    min-width: 36px;
+    right: 15px;
+    top: 7px;
+  }
+
+  @media(min-width: 501px) {
+    .bm-burger-button{ display: none; }
+}
+   
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+   
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+   
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+   
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+   
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    display: flex;
+    justify-content: center;
+  }
+   
+   
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+   
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    margin: 20%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+   
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    margin-left: 31%;
+
+  }
+  @media(min-width: 501px) {
+    .bm-overlay{ display: none; }
+}
+
+  .menu-item{
+      color: white;
+      text-decoration: none;
+  }

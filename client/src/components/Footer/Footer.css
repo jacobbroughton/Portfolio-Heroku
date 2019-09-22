@@ -1,0 +1,10 @@
+.footerLink{
+    text-decoration: none;
+    color: #d4d4dc;
+    margin: 5%;
+    font-size: 1.3rem;
+}
+
+@media(max-width: 760px) {
+    .footerLink{ font-size: 1.1rem }
+}

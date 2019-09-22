@@ -1,8 +1,28 @@
+html{
+  font-size: 1.1rem;
+  font-family: "Museo Sans";
+  height: 100%;    
+
+}
+  @font-face {
+    font-family:"Museo Sans";
+    src: url("./components/fonts/museoSans.ttf") format("TrueType");
+  }
+
 body {
   margin: 0;
-
+  height: 100vh;
 }
 
 code {
 
+}
+
+hr{
+  width: 90%;
+  border-color: #879FFF;
+}
+
+#root{
+  height: 100%;
 }
