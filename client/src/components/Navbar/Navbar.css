@@ -11,12 +11,11 @@
 }
 
 @media(max-width: 760px) {
-    .nameLink{ font-size: 1.1rem }
+    /* .nameLink{ font-size: 1.1rem } */
     .navLink{ font-size: 1.1rem }
 }
 
 @media(max-width: 582px) {
-    .nameLink{ font-size: 1.0rem }
     .navLink{ font-size: 1.0rem }
 }
 
@@ -121,4 +120,9 @@
   .menu-item{
       color: white;
       text-decoration: none;
+      outline: none;
+  }
+
+  .menu-item:hover{
+    color:#879FFF;
   }

@@ -40,7 +40,7 @@ class Footer extends Component {
 export default Footer;
 
 const MotherDiv = styled.div`
-    max-height: 200px;
+    max-height: 100%;
     background-color: #393f4d;
     border-top: solid 1px #879FFF;
 `
@@ -51,7 +51,7 @@ const MainDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 5%;  
 
 `
 
@@ -87,7 +87,7 @@ const SocialDiv = styled.div`
     align-items: center;
 `
 
-const ImgLink = styled.div`
+const ImgLink = styled.a`
     height: 100;
     width: 25%;
     display: flex;

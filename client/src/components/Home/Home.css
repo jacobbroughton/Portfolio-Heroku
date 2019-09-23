@@ -1,0 +1,14 @@
+#contactMeLink{
+    text-decoration: none;
+    color: black;
+}
+
+#contactMeLink:hover{
+    color: rgb(43, 83, 247);
+}
+
+#homeHr{
+    margin-bottom: 7.5%;
+}
+
+@media()

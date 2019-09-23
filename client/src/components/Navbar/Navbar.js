@@ -15,9 +15,9 @@ class Navbar extends Component {
                 </NameColumn>
                 <NavigationColumn>
                     <Menu pageWrapId={"page-wrap"} className="hamburgerMenu" width={ 150 } right>
-                        <a id="home" className="menu-item" href="/">Home</a>
-                        <a id="work" className="menu-item" href="/">Work</a>
-                        <a id="Contact" className="menu-item" href="/">Contact</a>
+                        <Link id="home" className="menu-item" to="/">Home</Link>
+                        <Link id="work" className="menu-item" to="/work">Work</Link>
+                        <Link id="Contact" className="menu-item" to="/contact">Contact</Link>
                     </Menu>
                     <LinksDiv className="linksMenu">
                         <Link className="navLink" to="/">Home</Link>
@@ -43,6 +43,7 @@ const MotherDiv = styled.div`
     min-height: 43px;
     max-height: 43px;
     position: fixed;
+    z-index: 2;
 
 `
 
