@@ -21,7 +21,7 @@ class Navbar extends Component {
                     </Menu>
                     <LinksDiv className="linksMenu">
                         <Link className="navLink" to="/">Home</Link>
-                        <Link className="navLink" to="/Work">Work</Link>
+                        <Link className="navLink" to="/work">Work</Link>
                         <Link className="navLink" to="/contact">Contact</Link>
                     </LinksDiv>
                 </NavigationColumn>

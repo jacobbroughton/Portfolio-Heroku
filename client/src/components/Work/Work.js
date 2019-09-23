@@ -16,7 +16,7 @@ class Work extends Component {
                     <WorkWindows>
                         <a href="https://new-age-oils.herokuapp.com/">
                             <WorkWindow >
-                                <Background id="newAgeOilsDiv" clas></Background>
+                                <Background id="newAgeOilsDiv"></Background>
                                 <WorkHead className="opaqueHead">New Age Oils</WorkHead>
                             </WorkWindow>
                         </a>
@@ -79,6 +79,12 @@ const HeadDiv = styled.div`
     justify-content: center;
     align-items: center;
     padding: 3%;
+    min-height: 105px;
+
+    @media(max-width: 350px) {
+        margin-top: 10%;
+        padding-bottom: 2%;
+    }
 `
 
 const Header = styled.h2`
