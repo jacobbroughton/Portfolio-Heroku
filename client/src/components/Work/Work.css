@@ -41,4 +41,5 @@
 
 @media(max-width: 550px) { .workWindow{ height: 75px; width: 100%;}}
 @media(max-width: 460px) { .workWindow{ font-size: 1.2rem; }}
-@media(max-width: 395px) { .workWindow{ font-size: 1.1rem; }}
+@media(max-width: 420px) { .workWindow{ font-size: 1.15rem; }}
+@media(max-width: 395px) { .workWindow{ font-size: 1rem; }}

@@ -27,7 +27,18 @@ class Work extends Component {
                             </WorkBtnDiv>
                         </WorkLinkDiv>
                         <WorkLinkDiv className="workWindow">
-                            <WorkPara>Lone Soldier Game</WorkPara>
+                            <WorkPara>This Portfolio</WorkPara>
+                            <WorkBtnDiv>
+                                <a href="http://www.jlbroughton.com">
+                                    <Website>Website</Website>
+                                </a>
+                                <a href="https://github.com/jlbroughton88/Portfolio">
+                                    <GitHub>GitHub</GitHub>
+                                </a>
+                            </WorkBtnDiv>
+                        </WorkLinkDiv>
+                        <WorkLinkDiv className="workWindow">
+                            <WorkPara>Lone Soldier Game (Desktop)</WorkPara>
                             <WorkBtnDiv>
                                 <a href="https://jlbroughton88.github.io/Lone-Soldier-Game/">
                                     <Website>Website</Website>
@@ -175,4 +186,9 @@ const WorkPara = styled.p`
     margin-bottom: 6px;
     padding-bottom: 6px;
     text-align: center;
+`
+
+const WorkPara2 = styled.p`
+    margin: 0;
+    color: #d4d4dc;
 `
