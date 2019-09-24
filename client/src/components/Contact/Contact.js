@@ -6,7 +6,7 @@ class Contact extends Component {
     render() {
         return (
             <MotherDiv>
-                <MainDiv>
+                <MainDiv>8
                     <ContactHeadDiv>
                         <ContactHead>Contact Me!</ContactHead>
                     </ContactHeadDiv>
@@ -17,13 +17,16 @@ class Contact extends Component {
                             <NameDiv>
                                 <Name>Jacob Broughton</Name>
                             </NameDiv>
-
+                            {/* <GitHubDiv>
+                                <Github href="https://github.com/jlbroughton88">My Github</Github>
+                            </GitHubDiv> */}
                             <PhoneNumDiv>
                                 <PhoneNum>(704)-770-8371</PhoneNum>
                             </PhoneNumDiv>
                             <EmailDiv>
                                 <Email href="mailto:jlbroughton88@gmail.com">Jlbroughton88@gmail.com</Email>
                             </EmailDiv>
+
                         </ContactInfoDiv>
                     </ContactMeDiv>
 
@@ -146,4 +149,17 @@ const Email = styled.a`
     @media(min-width: 550px) { font-size: 1.5rem; }
     @media(max-width: 549px) { font-size: 1.4rem }
     @media(max-width: 435px) { font-size:  1.25rem }
+`
+
+// Github
+const GitHubDiv = styled.div``
+
+const Github = styled.a`
+font-size: 1.25rem;
+margin: 0;
+color: #d4d4dc;
+text-decoration: none;
+@media(min-width: 550px) { font-size: 1.85rem; }
+@media(max-width: 549px) { font-size: 1.6rem }
+@media(max-width: 435px) { font-size:  1.45rem }
 `

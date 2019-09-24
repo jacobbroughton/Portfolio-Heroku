@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import email from "../images/socialMediaIcons/email.png"
-import faceBook from "../images/socialMediaIcons/facebook.png"
+import github from "../images/socialMediaIcons/githubLogoWhite.png"
 import linkedIn from "../images/socialMediaIcons/linkedin.png"
 import instagram from "../images/socialMediaIcons/instagram.png"
 import "./Footer.css"
@@ -14,13 +14,13 @@ class Footer extends Component {
                 <MainDiv>
                     <SocialRow>
                         <SocialDiv>
-                            <ImgLink href="mailto:nfo@newageoilsllc.com"><Img src={email} alt="Email Us!" /></ImgLink>
+                            <ImgLink href="mailto:jlbroughton88@gmail.com"><Img src={email} alt="Email Us!" /></ImgLink>
 
-                            <ImgLink href="https://www.facebook.com"><Img src={faceBook} alt="" /></ImgLink>
+                            <ImgLink href="https://github.com/jlbroughton88"><Img src={github} alt="" /></ImgLink>
 
-                            <ImgLink href="https://www.linkedin.com"><Img src={linkedIn} alt="" /></ImgLink>
+                            <ImgLink href="https://www.linkedin.com/in/jacob-broughton-637189164/"><Img src={linkedIn} alt="" /></ImgLink>
 
-                            <ImgLink href="https://www.instagram.com"><Img src={instagram} alt="" /></ImgLink>
+                            <ImgLink href="https://www.instagram.com/jakelbroughton"><Img src={instagram} alt="" /></ImgLink>
                         </SocialDiv>
                     </SocialRow>
                     <hr />

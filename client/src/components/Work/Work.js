@@ -14,23 +14,40 @@ class Work extends Component {
                     </HeadDiv>
                     <hr />
                     <WorkWindowDiv>
-                        <a className="workWindow" href="https://new-age-oils.herokuapp.com/" >
-                                <WorkLinkDiv>
-                                    <WorkPara>New Age Oils Website</WorkPara>
-                                </WorkLinkDiv>
-                        </a>
-                        <a className="workWindow" href="https://jlbroughton88.github.io/Lone-Soldier-Game/">
-                        <WorkLinkDiv>
-                                <WorkPara>Lone Soldier Game</WorkPara>
-                            </WorkLinkDiv>
-                        </a>
-    
-                                
-                        <a className="workWindow" href="https://jlbroughton88.github.io/Bike-Guessing-Game/">
-                        <WorkLinkDiv>
-                                <WorkPara>Bike Guessing Game</WorkPara>
-                            </WorkLinkDiv>
-                        </a>
+
+                        <WorkLinkDiv className="workWindow">
+                            <WorkPara>New Age Oils Website</WorkPara>
+                            <WorkBtnDiv >
+                                <a href="https://new-age-oils.herokuapp.com/">
+                                    <Website>Website</Website>
+                                </a>
+                                <a href="https://github.com/jlbroughton88/NewAgeOils">
+                                    <GitHub>GitHub</GitHub>
+                                </a>
+                            </WorkBtnDiv>
+                        </WorkLinkDiv>
+                        <WorkLinkDiv className="workWindow">
+                            <WorkPara>Lone Soldier Game</WorkPara>
+                            <WorkBtnDiv>
+                                <a href="https://jlbroughton88.github.io/Lone-Soldier-Game/">
+                                    <Website>Website</Website>
+                                </a>
+                                <a href="https://github.com/jlbroughton88/Lone-Soldier-Game">
+                                    <GitHub>GitHub</GitHub>
+                                </a>
+                            </WorkBtnDiv>
+                        </WorkLinkDiv>
+                        <WorkLinkDiv className="workWindow">
+                            <WorkPara>Bike Guessing Game</WorkPara>
+                            <WorkBtnDiv>
+                                <a href="https://jlbroughton88.github.io/Bike-Guessing-Game/">
+                                    <Website>Website</Website>
+                                </a>
+                                <a href="https://github.com/jlbroughton88/Bike-Guessing-Game">
+                                    <GitHub>GitHub</GitHub>
+                                </a>
+                            </WorkBtnDiv>
+                        </WorkLinkDiv>
                     </WorkWindowDiv>
                 </MainDiv>
                 <Footer />
@@ -88,15 +105,19 @@ const WorkWindowDiv = styled.div`
     align-items: center;
     margin-bottom: 5%;
     margin-top: 2.5%;
+
+    @media(min-width: 800px) { margin-top:2%;  };
+    @media(min-width: 950px) { margin-top:1.75%;  };
+    @media(min-width: 1100px) { margin-top:1.25%;  };
 `
 
 
 const WorkLinkDiv = styled.div`
     width: 60%;
-    border-bottom: solid 1px #feda6a;
     text-decoration: none;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
     @media(max-width: 600px) { width: 65%; }
     @media(max-width: 530px) { width: 70%; }
@@ -106,9 +127,52 @@ const WorkLinkDiv = styled.div`
     
 `
 
+const WorkBtnDiv = styled.div`
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+
+
+    @media(max-width: 450px) { width: 80%; }
+    @media(max-width: 350px) { width: 100%; }
+`
+
+const GitHub = styled.div`
+    color: #d4d4dc;
+    font-size: 0.95rem
+    padding: 3px;    
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: solid 1px #879FFF; 
+    border-bottom: solid 1px #879FFF;
+    display: flex;
+    justify-content: center;
+
+    :hover{ color: #feda6a }
+`
+
+const Website = styled.div`
+    color: #d4d4d4;
+    font-size: 0.95rem;
+    padding: 3px;    
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: solid 1px #879FFF; 
+    border-bottom: solid 1px #879FFF;
+    display: flex;
+    justify-content: center;
+
+    :hover{ color: #feda6a }
+`
+
 const WorkPara = styled.p`
+    border-bottom: solid 1px #feda6a;
     text-decoration: none;
     color: #d4d4dc;
     margin: 0;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    text-align: center;
 `
