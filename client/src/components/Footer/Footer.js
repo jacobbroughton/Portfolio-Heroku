@@ -51,7 +51,9 @@ const MainDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;  
+    padding: 5%; 
+    padding-top: 2.5%;
+    padding-bottom: 2.5%; 
 
 `
 

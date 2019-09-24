@@ -37,13 +37,7 @@ class Contact extends Component {
 export default Contact
 
 const MotherDiv = styled.div`
-    height: 100vh;
-
-    @media(max-width: 450px) {
-        height: 85vh;        
-    }
-
-
+    height: 100%;
 `
 
 const MainDiv = styled.div`
@@ -53,6 +47,7 @@ const MainDiv = styled.div`
     align-items: center;
     flex-direction: column;
     background-color: #1d1e22;
+
 `
 
 const ContactMeDiv = styled.div`
@@ -67,6 +62,11 @@ const ContactMeDiv = styled.div`
     background-color: #393f4d;
     color: #d4d4dc;
 
+    @media(min-width: 550px) {
+        height: 350px
+        width: 440px;
+    }
+
     @media(max-width: 475px) {
         height: 215px;        
         width: 375px;
@@ -77,7 +77,7 @@ const ContactMeDiv = styled.div`
         width: 365px;
     }
 
-    @media(max-width: 400px) {
+    @media(max-width: 414px) {
         height: 155px; 
         width: 325px;
     }
@@ -88,15 +88,16 @@ const ContactHeadDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    height: 95px;
+    min-height: 110px;
 
-    
 `
 
 const ContactHead = styled.h2`
     font-size: 3rem;
     margin: 0;
     @media(max-width: 475px) { font-size: 2.75rem;}
+    @media(max-width: 415px) { font-size: 2.50rem;}
     color: #d4d4dc;
 `
 
@@ -115,6 +116,7 @@ const NameDiv = styled.div``
 const Name = styled.p`
     font-size: 1.5rem;
     margin: 0;
+    @media(min-width: 550px) { font-size: 2.5rem; }
 `
 
 // Phone Number
@@ -123,6 +125,7 @@ const PhoneNumDiv = styled.div``
 const PhoneNum = styled.p`
     font-size: 1.25rem;
     margin: 0;
+    @media(min-width: 550px) { font-size: 2rem; }
 `
 
 // Email
@@ -133,8 +136,6 @@ const Email = styled.a`
     margin: 0;
     text-decoration: none;
     color: #feda6a;
-
-    :hover{
-        color: #879FFF;
-    }
+    :hover{ color: #879FFF; }
+    @media(min-width: 550px) { font-size: 1.6rem; }
 `

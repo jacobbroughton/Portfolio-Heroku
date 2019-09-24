@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "687445109d8e990fcd196b82d14472f4",
+    "revision": "a37783598fb88c749407ab93fef8d1af",
     "url": "/index.html"
   },
   {
-    "revision": "1e8ccbaf753d35e3827d",
-    "url": "/static/css/main.64719f38.chunk.css"
+    "revision": "55efd7c0fd85cf19d09f",
+    "url": "/static/css/main.c9d32f4f.chunk.css"
   },
   {
     "revision": "f8246c3f36e746669766",
     "url": "/static/js/2.5f34c7c1.chunk.js"
   },
   {
-    "revision": "1e8ccbaf753d35e3827d",
-    "url": "/static/js/main.8a3daace.chunk.js"
+    "revision": "55efd7c0fd85cf19d09f",
+    "url": "/static/js/main.521167ea.chunk.js"
   },
   {
     "revision": "2055ac218fe3f7ad47ca",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "69f66af2de63933c3244fa2fbd71d7e3",
     "url": "/static/media/brandGuessingGame.69f66af2.png"
-  },
-  {
-    "revision": "b3e3996b5003fd3d948864ddfca5c549",
-    "url": "/static/media/calculator.b3e3996b.png"
   },
   {
     "revision": "d2249387c7613f0ca9d3c819bb38ba22",

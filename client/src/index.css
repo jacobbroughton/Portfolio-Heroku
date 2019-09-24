@@ -1,7 +1,9 @@
-html{
+html, body{
   font-size: 1.1rem;
   font-family: "Museo Sans";
   height: 100%;    
+  width: 100%;
+  margin: 0;
   background-color: #1d1e22;
 
 }
@@ -9,15 +11,6 @@ html{
     font-family:"Museo Sans";
     src: url("./components/fonts/museoSans.ttf") format("TrueType");
   }
-
-body {
-  margin: 0;
-  height: 100vh;
-}
-
-code {
-
-}
 
 hr{
   width: 551px;
@@ -30,7 +23,10 @@ hr{
 @media(max-width: 600px) { hr{ width: 430px }}
 @media(max-width: 475px) { hr{ width: 375px }}
 @media(max-width: 415px) { hr{ width: 330px }}
+@media(max-width: 385px) { hr{ width: 300px }}
+@media(max-width: 355px) { hr{ width: 280px }}
 
 #root{
   height: 100%;
+  width: 100%;
 }

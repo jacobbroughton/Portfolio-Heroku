@@ -45,11 +45,12 @@ const MotherDiv = styled.div`
     position: fixed;
     z-index: 2;
 
+
 `
 
 const NameColumn = styled.div`
     height: 100%;
-    width: 20%;
+    width: 25%;
 `
 
 const NameDiv = styled.div`
@@ -77,4 +78,6 @@ const LinksDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @media(max-width: 675px) {margin-right: 6%} 
 `
