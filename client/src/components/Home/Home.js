@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from "styled-components";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import Resume from "../docs/myResume.pdf"
 import "./Home.css"
 
 class Home extends Component {
@@ -13,27 +14,32 @@ class Home extends Component {
                     <BannerDiv>
                         <Name>Jacob Broughton</Name>
                         <Statement>Creative Solutions</Statement>
+                        <Buttons>
                         <Link id="contactMeLink" to="/contact">
-                        <ContactButton>Contact Me</ContactButton>
+                            <ContactButton>Contact Me</ContactButton>
                         </Link>
+                        <a id="downloadLink" href={Resume} download><DownloadResume><p id="downloadP">Resume</p></DownloadResume></a>
+                        </Buttons>
+
+                        
                     </BannerDiv>
-                    <hr id="homeHr"/>
+                    <hr id="homeHr" />
                     <WindowsDiv>
                         <Window>
                             <WindowHead>Who am I?</WindowHead>
-                            <WindowPara> Exercitation ad ad aliquip reprehenderit.Qui ad sit culpa laboris aute.Quis esse adipisicing cupidatat deserunt qui excepteur velit reprehenderit mollit aliqua proident sit ad deserunt.</WindowPara>
+                            <WindowPara>Hi! My name is Jacob. i'm 20 years old, I live in Matthews, NC, I have 2 dogs and 2 cats, and I love mountain biking and hiking. I'm a full-stack web developer with about a year under my metaphorical belt...Thats what you're probably here for, right?</WindowPara>
                         </Window>
                         <Window>
                             <WindowHead>How can I help?</WindowHead>
-                            <WindowPara>Ea velit deserunt magna aliqua ad reprehenderit incididunt esse exercitation.Est nostrud sit quis laboris mollit.Eiusmod ad occaecat dolore esse elit culpa qui minim.</WindowPara>
+                            <WindowPara>I'd love to be able to say that i'm contributing to something greater than myself. A company that idealistically serves people, if I could be one of the ones serving, I'd feel right at home.</WindowPara>
                         </Window>
                         <Window>
                             <WindowHead>Why me?</WindowHead>
-                            <WindowPara>Nostrud exercitation eiusmod ullamco eu est eu laborum.Consequat reprehenderit est quis incididunt pariatur aliqua proident ut dolore fugiat Lorem amet enim occaecat.Officia deserunt esse labore ipsum ullamco eu eu consequat laboris ex consectetur culpa in est.</WindowPara>
+                            <WindowPara>I absolutely love to learn. That sounds good right? Well in reality I just love to challenge myself to the point of crippling imposter-syndrome but with the ultimate end of being better than I was when I started. I care about the end result, always.</WindowPara>
                         </Window>
                     </WindowsDiv>
                 </MainDiv>
-                <Footer/>
+                <Footer />
             </MotherDiv>
         )
     }
@@ -90,7 +96,7 @@ const Name = styled.h1`
     }
 
     @media(max-width: 450px) {
-        font-size: 2.6rem
+        font-size: 2.4rem
     }
 
     @media(max-width: 400px) {
@@ -121,6 +127,16 @@ const Statement = styled.h3`
     }
 `
 
+const Buttons = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    max-width: 420px;
+    
+`
+
 const ContactButton = styled.div`
     background-color: #feda6a;
     margin-top: 1%;
@@ -135,7 +151,26 @@ const ContactButton = styled.div`
     @media(max-width: 500px) {
         padding: 12px;
     }
+`
 
+// Download Resume
+const DownloadResume = styled.div`
+    background-color: #feda6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 102px;
+    max-width: 132px
+    max-height: 59px;
+
+    @media(max-width: 615px) {
+        padding: 15px;
+    }
+
+    @media(max-width: 500px) {
+        padding: 12px;
+    }
 `
 
 const WindowsDiv = styled.div`
@@ -181,25 +216,25 @@ const WindowHead = styled.h3`
     width: 80%;
 
     @media(max-width: 500px) {
-        font-size: 1.75rem
+        font-size: 1.65rem
     }
 
     @media(max-width: 450px) {
-        font-size: 1.7rem
+        font-size: 1.5rem
         width: 85%;
     }
 
     @media(max-width: 400px) {
-        font-size: 1.65rem;
+        font-size: 1.45rem;
         width: 100%;
     }
 
     @media(max-width: 350px) {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     @media(max-width: 336px) {
-        font-size: 1.55rem;
+        font-size: 1.35rem;
         min-width:210px;
     }
 `

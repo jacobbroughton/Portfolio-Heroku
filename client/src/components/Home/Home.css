@@ -10,3 +10,12 @@
 #homeHr{
     margin-bottom: 7.5%;
 }
+
+#downloadLink{
+    text-decoration: none;
+    color: black;
+}
+
+#downloadP{
+    margin: 0;
+}

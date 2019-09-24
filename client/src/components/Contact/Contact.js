@@ -73,12 +73,14 @@ const ContactMeDiv = styled.div`
     }
 
     @media(max-width: 435px) {
-        height: 190px; 
+        justify-content: space-evenly
+        // height: 190px; 
         width: 365px;
     }
 
     @media(max-width: 414px) {
-        height: 155px; 
+        justify-content: space-evenly;
+        // height: 155px; 
         width: 325px;
     }
 
@@ -116,7 +118,9 @@ const NameDiv = styled.div``
 const Name = styled.p`
     font-size: 1.5rem;
     margin: 0;
-    @media(min-width: 550px) { font-size: 2.5rem; }
+    @media(min-width: 550px) { font-size: 2.35rem; }
+    @media(max-width: 549px) { font-size: 2.15rem }
+    @media(max-width: 435px) { font-size: 2.05rem }
 `
 
 // Phone Number
@@ -125,7 +129,9 @@ const PhoneNumDiv = styled.div``
 const PhoneNum = styled.p`
     font-size: 1.25rem;
     margin: 0;
-    @media(min-width: 550px) { font-size: 2rem; }
+    @media(min-width: 550px) { font-size: 1.85rem; }
+    @media(max-width: 549px) { font-size: 1.6rem }
+    @media(max-width: 435px) { font-size:  1.45rem }
 `
 
 // Email
@@ -137,5 +143,7 @@ const Email = styled.a`
     text-decoration: none;
     color: #feda6a;
     :hover{ color: #879FFF; }
-    @media(min-width: 550px) { font-size: 1.6rem; }
+    @media(min-width: 550px) { font-size: 1.5rem; }
+    @media(max-width: 549px) { font-size: 1.4rem }
+    @media(max-width: 435px) { font-size:  1.25rem }
 `
