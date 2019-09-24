@@ -13,7 +13,7 @@ class Home extends Component {
                     <Offset></Offset>
                     <BannerDiv>
                         <Name>Jacob Broughton</Name>
-                        <Statement>Creative Solutions</Statement>
+                        <Statement>Full Stack Web Developer</Statement>
                         <Buttons>
                         <Link id="contactMeLink" to="/contact">
                             <ContactButton>Contact Me</ContactButton>
