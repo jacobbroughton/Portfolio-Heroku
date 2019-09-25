@@ -6,7 +6,7 @@ class Contact extends Component {
     render() {
         return (
             <MotherDiv>
-                <MainDiv>8
+                <MainDiv>
                     <ContactHeadDiv>
                         <ContactHead>Contact Me!</ContactHead>
                     </ContactHeadDiv>

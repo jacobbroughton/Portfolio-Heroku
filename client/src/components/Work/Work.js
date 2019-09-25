@@ -186,6 +186,8 @@ const WorkPara = styled.p`
     margin-bottom: 6px;
     padding-bottom: 6px;
     text-align: center;
+
+    @media(max-width: 800px) { font-size: 1.2rem }
 `
 
 const WorkPara2 = styled.p`
