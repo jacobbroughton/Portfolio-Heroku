@@ -49,7 +49,7 @@ class Home extends Component {
                             </SkillsListDiv>
                             {/* <WindowPara>I'd love to be able to say that i'm contributing to something greater than myself. A company that idealistically serves people, if I could be one of the ones helping out, I'd feel right at home.</WindowPara> */}
                         </Window>
-                        <Window>
+                        <Window id="whyWindow">
                             <WindowHead>Why me?</WindowHead>
                             <WindowPara>I love to learn. I've always been one for self-teaching. Admittedly i'm not very good in the classroom setting, so i've had to get pretty good at teaching myself efficiently. I'm a positive person to be around, and I care about the work that I do. I also just really enjoy coding, designing, and solving problems in general. <br /> <br /> I'd love to be able to say that i'm contributing to something greater than myself. A company that idealistically serves people, if I could be one of the ones helping out, I'd feel right at home.</WindowPara>
                         </Window>
@@ -267,20 +267,20 @@ const WindowPara = styled.p`
         font-size: 0.95rem
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 460px) {
         font-size: 0.9rem
     }
 
     @media(max-width: 400px) {
-        font-size: 0.85rem;
+        font-size: 0.80rem;
     }
 
     @media(max-width: 350px) {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     @media(max-width: 325px) {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
     }
 `
 

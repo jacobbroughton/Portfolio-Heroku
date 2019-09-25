@@ -29,3 +29,8 @@
 }
 
 @media(max-width: 400px) { #skillsWindow{ padding-top: 5%; padding-bottom: 0;}}
+
+@media(max-width: 540px) {#whyWindow{
+    padding-top: 12%;
+    padding-bottom: 12%;
+}}
