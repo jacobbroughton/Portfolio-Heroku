@@ -6,10 +6,17 @@ var path = require("path");
 // run this in the client folder....npm run build
 app.use(express.static(path.join(__dirname, "client/build")))
 
-app.get("/", (req, res) => {
-    res.send("Portfolio server")
-})
+// app.get("/", (req, res) => {
+//     res.send("Portfolio server")
+// })
 
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/public/index.html'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+  })
 
 
 app.listen(process.env.PORT || 5004, () => {
