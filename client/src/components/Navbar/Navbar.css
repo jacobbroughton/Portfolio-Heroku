@@ -2,12 +2,22 @@
     color: black;
     text-decoration: none;
     font-size: 1.7rem;
+    transition: all .15s ease-out;
+}
+
+.nameLink:hover{
+  color: #feda6a;
 }
 
 .navLink{
     color: black;
     text-decoration: none;
     font-size: 1.3rem;
+    transition: all .15s ease-out;
+}
+
+.navLink:hover{
+  color: #feda6a;
 }
 
 @media(max-width: 760px) {
@@ -61,17 +71,18 @@
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
     background: #373a47;
+    transition: all .15s ease-out;
   }
    
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: #feda6a;
+    background-color: #feda6a;
   }
    
 
   /* Color/shape of close button cross */
   .bm-cross {
-    background: #bdc3c7;
+    background-color: #feda6a;
   }
    
   /*
@@ -90,6 +101,7 @@
     font-size: 1.15em;
     display: flex;
     justify-content: center;
+    border-left: #d4d4dc solid 1px;
   }
    
    
@@ -118,9 +130,10 @@
 }
 
   .menu-item{
-      color: white;
+      color: #d4d4dc;
       text-decoration: none;
       outline: none;
+      transition: all .3s ease-out;
   }
 
   .menu-item:hover{

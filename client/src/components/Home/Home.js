@@ -155,10 +155,11 @@ const Buttons = styled.div`
 
 const ContactButton = styled.div`
     background-color: #feda6a;
-    margin-top: 1%;
     padding: 20px;
     max-width: 132px
     max-height: 59px;
+    transition: all .15s ease-out;
+    :hover{ opacity: 0.8;}
 
     @media(max-width: 615px) {
         padding: 15px;
@@ -169,7 +170,6 @@ const ContactButton = styled.div`
     }
 `
 
-// Download Resume
 const DownloadResume = styled.div`
     background-color: #feda6a;
     display: flex;
@@ -179,6 +179,8 @@ const DownloadResume = styled.div`
     width: 102px;
     max-width: 132px
     max-height: 59px;
+    transition: all .15s ease-out;
+    :hover{ opacity: 0.8 }
 
     @media(max-width: 615px) {
         padding: 15px;

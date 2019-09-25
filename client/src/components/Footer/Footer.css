@@ -3,7 +3,14 @@
     color: #d4d4dc;
     margin: 5%;
     font-size: 1.3rem;
+    transition: all .15s ease-out;
 }
+
+.footerLink:hover{
+    color: #feda6a;
+}
+
+
 
 @media(max-width: 760px) {
     .footerLink{ font-size: 1.1rem }

@@ -160,7 +160,7 @@ const GitHub = styled.div`
     border-bottom: solid 1px #879FFF;
     display: flex;
     justify-content: center;
-
+    transition: all .3s ease-out;
     :hover{ color: #feda6a }
 `
 
@@ -174,7 +174,7 @@ const Website = styled.div`
     border-bottom: solid 1px #879FFF;
     display: flex;
     justify-content: center;
-
+    transition: all .2s ease-out;
     :hover{ color: #feda6a }
 `
 

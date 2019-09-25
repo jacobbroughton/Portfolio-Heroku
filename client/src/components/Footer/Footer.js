@@ -98,6 +98,11 @@ const ImgLink = styled.a`
     margin-top: 0;
     margin-bottom: 0;
     align-self: center;
+
+    :hover{     
+        transition: all .15s ease-out;
+        opacity: 0.8;
+    }
 `
 
 const Img = styled.img`

@@ -145,6 +145,7 @@ const Email = styled.a`
     margin: 0;
     text-decoration: none;
     color: #feda6a;
+    transition: all .3s ease-out;
     :hover{ color: #879FFF; }
     @media(min-width: 550px) { font-size: 1.5rem; }
     @media(max-width: 549px) { font-size: 1.4rem }
