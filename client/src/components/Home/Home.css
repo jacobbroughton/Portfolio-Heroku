@@ -23,3 +23,9 @@
 #downloadP{
     margin: 0;
 }
+
+#skillsWindow{
+    padding-bottom: 2%;
+}
+
+@media(max-width: 400px) { #skillsWindow{ padding-top: 5%; padding-bottom: 0;}}

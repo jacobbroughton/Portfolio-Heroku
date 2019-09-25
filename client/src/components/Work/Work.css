@@ -27,7 +27,7 @@
     margin-left: 0;
     margin-right: 0;
     max-width: 395px;
-    min-width: 250px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@
 
 
 
-@media(max-width: 550px) { .workWindow{ height: 75px; width: 100%;}}
-@media(max-width: 460px) { .workWindow{ font-size: 1.2rem; }}
+@media(max-width: 550px) { .workWindow{ height: 77px; width: 100%;}}
+@media(max-width: 460px) { .workWindow{ height: 80px; font-size: 1.2rem; }}
 @media(max-width: 420px) { .workWindow{ font-size: 1.15rem; }}
 @media(max-width: 395px) { .workWindow{ font-size: 1rem; }}

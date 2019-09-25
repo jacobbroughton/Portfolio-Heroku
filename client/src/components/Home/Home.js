@@ -15,13 +15,13 @@ class Home extends Component {
                         <Name>Jacob Broughton</Name>
                         <Statement>Full Stack Web Developer</Statement>
                         <Buttons>
-                        <Link id="contactMeLink" to="/contact">
-                            <ContactButton>Contact Me</ContactButton>
-                        </Link>
-                        <a id="downloadLink" href={Resume} download><DownloadResume><p id="downloadP">Resume</p></DownloadResume></a>
+                            <Link id="contactMeLink" to="/contact">
+                                <ContactButton>Contact Me</ContactButton>
+                            </Link>
+                            <a id="downloadLink" href={Resume} download><DownloadResume><p id="downloadP">Resume</p></DownloadResume></a>
                         </Buttons>
 
-                        
+
                     </BannerDiv>
                     <hr id="homeHr" />
                     <WindowsDiv>
@@ -29,13 +29,29 @@ class Home extends Component {
                             <WindowHead>Who am I?</WindowHead>
                             <WindowPara>Hi! My name is Jacob. i'm 20 years old, I live in Matthews, NC, I have 2 dogs and 2 cats, and I love mountain biking and hiking. I'm a full-stack web developer with about a year under my metaphorical belt...Thats what you're probably here for, right?</WindowPara>
                         </Window>
-                        <Window>
-                            <WindowHead>How can I help?</WindowHead>
-                            <WindowPara>I'd love to be able to say that i'm contributing to something greater than myself. A company that idealistically serves people, if I could be one of the ones serving, I'd feel right at home.</WindowPara>
+                        <Window id="skillsWindow">
+                            <WindowHead>Skills?</WindowHead>
+                            <SkillsListDiv>
+                                <SkillUl>
+                                    <SkillLi>HTML5</SkillLi>
+                                    <SkillLi>CSS</SkillLi>
+                                    <SkillLi>Javascript</SkillLi>
+                                    <SkillLi>ReactJS</SkillLi>
+                                    <SkillLi>Node.js</SkillLi>
+                                </SkillUl>
+                                <SkillUl>
+                                    <SkillLi>Materialize</SkillLi>
+                                    <SkillLi>Bootstrap</SkillLi>
+                                    <SkillLi>Express.js</SkillLi>
+                                    <SkillLi>GIT VC</SkillLi>
+                                    <SkillLi>Heroku</SkillLi>
+                                </SkillUl>
+                            </SkillsListDiv>
+                            {/* <WindowPara>I'd love to be able to say that i'm contributing to something greater than myself. A company that idealistically serves people, if I could be one of the ones helping out, I'd feel right at home.</WindowPara> */}
                         </Window>
                         <Window>
                             <WindowHead>Why me?</WindowHead>
-                            <WindowPara>I absolutely love to learn. That sounds good right? Well in reality I just love to challenge myself to the point of crippling imposter-syndrome but with the ultimate end of being better than I was when I started. I care about the end result, always.</WindowPara>
+                            <WindowPara>I love to learn. I've always been one for self-teaching. Admittedly i'm not very good in the classroom setting, so i've had to get pretty good at teaching myself efficiently. I'm a positive person to be around, and I care about the work that I do. I also just really enjoy coding, designing, and solving problems in general. <br /> <br /> I'd love to be able to say that i'm contributing to something greater than myself. A company that idealistically serves people, if I could be one of the ones helping out, I'd feel right at home.</WindowPara>
                         </Window>
                     </WindowsDiv>
                 </MainDiv>
@@ -190,6 +206,7 @@ const WindowsDiv = styled.div`
 `
 
 const Window = styled.div`
+    width: 80%;
     margin-bottom: 35px;
     display: flex;
     flex-direction: column;
@@ -199,8 +216,10 @@ const Window = styled.div`
     color:#0f2027;
     background-color: #393f4d;
     max-width: 552px;
-    max-height: 179px;
+    max-height: 280px;
     padding: 30px;
+
+    @media(max-width: 602px) { max-height: 300px }
 
 
     
@@ -213,7 +232,8 @@ const WindowHead = styled.h3`
     color: #d4d4dc;
     border-bottom: solid 1px #feda6a;
     padding-bottom: 5px;
-    width: 80%;
+
+    @media(min-width:)
 
     @media(max-width: 500px) {
         font-size: 1.65rem
@@ -221,12 +241,10 @@ const WindowHead = styled.h3`
 
     @media(max-width: 450px) {
         font-size: 1.5rem
-        width: 85%;
     }
 
     @media(max-width: 400px) {
         font-size: 1.45rem;
-        width: 100%;
     }
 
     @media(max-width: 350px) {
@@ -264,4 +282,35 @@ const WindowPara = styled.p`
     @media(max-width: 325px) {
         font-size: 0.75rem;
     }
+`
+
+const SkillsListDiv = styled.div`
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+`
+
+const SkillColLeft = styled.div``
+
+const SkillColRight = styled.div``
+
+const SkillUl = styled.ul`
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+`
+
+const SkillLi = styled.li`
+    color: #d4d4dc;
+    margin: 7px;
+    margin-left: 0;
+    margin-right: 0;
+    @media(max-width: 400px){ font-size: 0.9rem }
+    list-style: none;
 `
