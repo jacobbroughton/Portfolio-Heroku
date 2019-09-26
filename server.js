@@ -10,13 +10,9 @@ app.use(express.static(path.join(__dirname, "client/build")))
 //     res.send("Portfolio server")
 // })
 
-app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'client/public/index.html'), function(err) {
-      if (err) {
-        res.status(500).send(err)
-      }
-    })
-  })
+app.get('/contact', function(req, res) {
+  res.send("This is the contact route")
+})
 
 
 app.listen(process.env.PORT || 5004, () => {
