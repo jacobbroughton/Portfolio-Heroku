@@ -27,6 +27,17 @@ class Work extends Component {
                             </WorkBtnDiv>
                         </WorkLinkDiv>
                         <WorkLinkDiv className="workWindow">
+                            <WorkPara>CRUD Car List</WorkPara>
+                            <WorkBtnDiv>
+                                <a href="https://crud-car-list.herokuapp.com/all">
+                                    <Website>Website</Website>
+                                </a>
+                                <a href="https://github.com/jlbroughton88/CRUD_Car_List">
+                                    <GitHub>GitHub</GitHub>
+                                </a>
+                            </WorkBtnDiv>
+                        </WorkLinkDiv>
+                        <WorkLinkDiv className="workWindow">
                             <WorkPara>This Portfolio</WorkPara>
                             <WorkBtnDiv>
                                 <a href="http://www.jlbroughton.com">
@@ -188,9 +199,4 @@ const WorkPara = styled.p`
     text-align: center;
 
     @media(max-width: 800px) { font-size: 1.2rem }
-`
-
-const WorkPara2 = styled.p`
-    margin: 0;
-    color: #d4d4dc;
 `

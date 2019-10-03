@@ -296,10 +296,6 @@ const SkillsListDiv = styled.div`
     align-items: center;
 `
 
-const SkillColLeft = styled.div``
-
-const SkillColRight = styled.div``
-
 const SkillUl = styled.ul`
     padding: 0;
     display: flex;

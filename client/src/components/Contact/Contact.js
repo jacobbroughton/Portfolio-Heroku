@@ -151,16 +151,3 @@ const Email = styled.a`
     @media(max-width: 549px) { font-size: 1.4rem }
     @media(max-width: 435px) { font-size:  1.25rem }
 `
-
-// Github
-const GitHubDiv = styled.div``
-
-const Github = styled.a`
-font-size: 1.25rem;
-margin: 0;
-color: #d4d4dc;
-text-decoration: none;
-@media(min-width: 550px) { font-size: 1.85rem; }
-@media(max-width: 549px) { font-size: 1.6rem }
-@media(max-width: 435px) { font-size:  1.45rem }
-`
