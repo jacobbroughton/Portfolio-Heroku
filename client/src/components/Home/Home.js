@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from "styled-components";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
-import Resume from "../docs/myResume.pdf"
+import Resume from "../docs/MyResume.pdf"
 import "./Home.css"
 
 class Home extends Component {
