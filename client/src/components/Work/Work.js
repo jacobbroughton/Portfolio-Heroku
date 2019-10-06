@@ -29,7 +29,7 @@ class Work extends Component {
                         <WorkLinkDiv className="workWindow">
                             <WorkPara>CRUD Car List</WorkPara>
                             <WorkBtnDiv>
-                                <a href="https://crud-car-list.herokuapp.com/all">
+                                <a href="https://crud-car-list.herokuapp.com">
                                     <Website>Website</Website>
                                 </a>
                                 <a href="https://github.com/jlbroughton88/CRUD_Car_List">
