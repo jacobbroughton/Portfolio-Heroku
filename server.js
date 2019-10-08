@@ -14,6 +14,9 @@ app.get('/contact', function(req, res) {
   res.send("this is the contact route from the server")
   })
 
+app.get("*", () => {
+  res.sendFile(path.join(__dirname, "/client/public/index.html"))
+})
 
 app.listen(process.env.PORT || 5004, () => {
     console.log("Server is listening on port 5004")
