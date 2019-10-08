@@ -92,7 +92,7 @@ class Work extends Component {
 export default Work;
 
 const MotherDiv = styled.div`
-    height: 100%;
+    // height: 100%;
     width: 100%;
 
 `
