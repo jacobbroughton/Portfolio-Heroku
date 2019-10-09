@@ -40,9 +40,9 @@ class Home extends Component {
                                     <SkillLi>Node.js</SkillLi>
                                 </SkillUl>
                                 <SkillUl>
-                                    <SkillLi>Materialize</SkillLi>
-                                    <SkillLi>Bootstrap</SkillLi>
                                     <SkillLi>Express.js</SkillLi>
+                                    <SkillLi>MongoDB</SkillLi>
+                                    <SkillLi>Materialize</SkillLi>
                                     <SkillLi>GIT VC</SkillLi>
                                     <SkillLi>Heroku</SkillLi>
                                 </SkillUl>

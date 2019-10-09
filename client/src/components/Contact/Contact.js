@@ -24,7 +24,7 @@ class Contact extends Component {
                                 <PhoneNum>(704)-770-8371</PhoneNum>
                             </PhoneNumDiv>
                             <EmailDiv>
-                                <Email href="mailto:jlbroughton88@gmail.com">Jlbroughton88@gmail.com</Email>
+                                <Email href="mailto:jlbroughton88@gmail.com">Jlbroughtondev@gmail.com</Email>
                             </EmailDiv>
 
                         </ContactInfoDiv>
