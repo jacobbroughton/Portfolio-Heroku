@@ -43,6 +43,7 @@ class Home extends Component {
                                     <SkillLi>Express.js</SkillLi>
                                     <SkillLi>MongoDB</SkillLi>
                                     <SkillLi>Materialize</SkillLi>
+
                                     <SkillLi>GIT VC</SkillLi>
                                     <SkillLi>Heroku</SkillLi>
                                 </SkillUl>
@@ -155,7 +156,7 @@ const Buttons = styled.div`
 
 const ContactButton = styled.div`
     background-color: #feda6a;
-    padding: 20px;
+    padding: 17px;
     max-width: 132px
     max-height: 59px;
     transition: all .15s ease-out;
@@ -175,7 +176,7 @@ const DownloadResume = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 17px;
     width: 102px;
     max-width: 132px
     max-height: 59px;
