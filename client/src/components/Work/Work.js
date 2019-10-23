@@ -16,6 +16,18 @@ class Work extends Component {
                     <WorkWindowDiv>
 
                     <WorkLinkDiv className="workWindow">
+                            <WorkPara>Heavenly Details</WorkPara>
+                            <WorkBtnDiv >
+                                <a href="https://heavenly-details.herokuapp.com/">
+                                    <Website>Website</Website>
+                                </a>
+                                <a href="https://github.com/jlbroughton88/Heavenly-Details">
+                                    <GitHub>GitHub</GitHub>
+                                </a>
+                            </WorkBtnDiv>
+                        </WorkLinkDiv>
+
+                    <WorkLinkDiv className="workWindow">
                             <WorkPara>Pokedex</WorkPara>
                             <WorkBtnDiv >
                                 <a href="https://pokedex-jb.herokuapp.com/">
