@@ -26,7 +26,6 @@ class Work extends Component {
                                 </a>
                             </WorkBtnDiv>
                         </WorkLinkDiv>
-
                     <WorkLinkDiv className="workWindow">
                             <WorkPara>Pokedex</WorkPara>
                             <WorkBtnDiv >
