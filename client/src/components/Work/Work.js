@@ -162,6 +162,7 @@ const WorkLinkDiv = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border-radius: 5px;
 
     @media(max-width: 600px) { width: 65%; }
     @media(max-width: 530px) { width: 70%; }

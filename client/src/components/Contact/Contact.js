@@ -54,16 +54,17 @@ const MainDiv = styled.div`
 `
 
 const ContactMeDiv = styled.div`
-    margin-top: 40px;
-    height: 250px;
-    width: 400px;
-    display: flex;
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    height: 250px;
+    width: 400px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background-color: #393f4d;
     color: #d4d4dc;
+    border-radius: 5px;
 
     @media(min-width: 550px) {
         height: 350px
@@ -107,11 +108,12 @@ const ContactHead = styled.h2`
 `
 
 const ContactInfoDiv = styled.div`
-    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+    height: 70%;
+
     
 `
 

@@ -18,7 +18,11 @@ class Home extends Component {
                             <Link id="contactMeLink" to="/contact">
                                 <ContactButton>Contact Me</ContactButton>
                             </Link>
-                            <a id="downloadLink" href={Resume} download><DownloadResume><p id="downloadP">Resume</p></DownloadResume></a>
+                            <a id="downloadLink" href={Resume} download>
+                                <DownloadResume>
+                                    <p id="downloadP">Resume</p>
+                                </DownloadResume>
+                            </a>
                         </Buttons>
 
 
@@ -77,12 +81,13 @@ const Offset = styled.div`
 `
 
 const BannerDiv = styled.div`
-    min-height: 250px;
-    max-height: 300px;
-    display: flex;
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 250px;
+    max-height: 300px;
+
     background-color: #1d1e22;
     
 
@@ -155,52 +160,53 @@ const Buttons = styled.div`
 `
 
 const ContactButton = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #feda6a;
-    padding: 17px;
-    max-width: 132px
-    max-height: 59px;
+    width: 134px;
+    height: 45px;
     transition: all .15s ease-out;
-    :hover{ opacity: 0.8;}
+    border-radius: 5px;
+    box-sizing: border-box;
 
-    @media(max-width: 615px) {
-        padding: 15px;
-    }
-
-    @media(max-width: 500px) {
-        padding: 12px;
+    :hover{ 
+        opacity: 0.8;
+        background-color: #1d1e22;
+        border: solid 2px #feda6a;
+        color: #feda6a;
     }
 `
 
 const DownloadResume = styled.div`
-    background-color: #feda6a;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 17px;
-    width: 102px;
-    max-width: 132px
-    max-height: 59px;
+    background-color: #feda6a;
+    width: 134px;
+    height: 45px;
     transition: all .15s ease-out;
-    :hover{ opacity: 0.8 }
+    border-radius: 5px;
+    box-sizing: border-box;
 
-    @media(max-width: 615px) {
-        padding: 15px;
-    }
-
-    @media(max-width: 500px) {
-        padding: 12px;
+    :hover{ 
+        opacity: 0.8;
+        background-color: #1d1e22;
+        border: solid 2px #feda6a;
+        color: #feda6a;
     }
 `
 
 const WindowsDiv = styled.div`
-    padding: 10%;
-    padding-top: 0;
-    padding-bottom: 2.5%;
-    display: flex;
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
+    padding: 10%;
+    padding-top: 0;
+    padding-bottom: 2.5%;
+
 
     @media(max-width: 614px) {
         margin-top: 5%;
@@ -209,18 +215,19 @@ const WindowsDiv = styled.div`
 `
 
 const Window = styled.div`
-    width: 80%;
-    margin-bottom: 35px;
-    display: flex;
+        display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    width: 80%;
+    margin-bottom: 35px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     color:#0f2027;
     background-color: #393f4d;
     max-width: 552px;
     max-height: 280px;
     padding: 30px;
+    border-radius: 5px;
 
     @media(max-width: 602px) { max-height: 300px }
 
@@ -288,21 +295,23 @@ const WindowPara = styled.p`
 `
 
 const SkillsListDiv = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
+        display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+
 `
 
 const SkillUl = styled.ul`
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+        flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0;
+    display: flex;
+
 `
 
 const SkillLi = styled.li`
