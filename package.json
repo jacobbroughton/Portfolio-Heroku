@@ -9,7 +9,9 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "killport": "lsof -t -i tcp:1234 | xargs kill"
+    "killport": "lsof -t -i tcp:1234 | xargs kill",
+    "find": "pgrep node",
+    "kill": "pkill node"
   },
   "repository": {
     "type": "git",
